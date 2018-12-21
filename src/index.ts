@@ -1,0 +1,1 @@
+export const hello = (name: string) => `${name}!, How are you doing today?`;

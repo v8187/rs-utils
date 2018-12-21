@@ -2,14 +2,26 @@
   "name": "@sr/utils",
   "version": "0.0.1-draft",
   "description": "Utility methods / functions for JavaScript and Typescript projects",
-  "main": "src/utils/index.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "jest"
+    "build": "tsc",
+    "format": "prettier --write \"(src|tests)/**/*.(t|j)s\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jest.config.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/v8187/sr-utils.git"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "keywords": [
     "utils",
     "utilities",
@@ -24,27 +36,27 @@
     "email": "vikram1vicky@gmail.com",
     "url": "https://github.com/v8187/sr-utils"
   },
-  "contributes": [
-    {
-      "name": "Vikam Gupta",
-      "email": "vikram1vicky@gmail.com",
-      "url": "https://github.com/v8187/sr-utils"
-    }
-  ],
-  "bundleDependencies": false,
+  "contributes": {
+    "name": "Vikam Gupta",
+    "email": "vikram1vicky@gmail.com",
+    "url": "https://github.com/v8187/sr-utils"
+  },
+  "bundleDependencies": [],
   "private": false,
-  "license": "(MIT OR GPL-3.0)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/v8187/sr-utils/issues",
     "email": "vikram1vicky@gmail.com"
   },
   "homepage": "https://github.com/v8187/sr-utils#readme",
-  "dependencies": {
-    "chalk": "^2.4.1",
-    "jest": "^23.6.0"
-  },
   "devDependencies": {
-    "@types/chalk": "^2.2.0",
-    "@types/jest": "^23.3.10"
+    "@types/jest": "^23.3.10",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2"
   }
 }
