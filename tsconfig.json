@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
+    "declarationDir": "dist/types",
     "module": "commonjs",
     "target": "es5",
     "declaration": true,
@@ -9,7 +10,7 @@
       "es6",
       "dom"
     ],
-    "sourceMap": true,
+    "inlineSourceMap": true,
     "allowJs": false,
     "moduleResolution": "node",
     "rootDir": "src",
@@ -31,7 +32,8 @@
     "acceptance-tests",
     "webpack",
     "jest",
-    "src/setupTests.ts"
+    "src/setupTests.ts",
+    "tests"
   ],
   "include": [
     "src"
