@@ -2,14 +2,15 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
-    "declarationDir": "dist/types",
+    // "declarationDir": "dist",
     "module": "commonjs",
     "target": "es5",
     "declaration": true,
-    "lib": [
-      "es6",
-      "dom"
-    ],
+    // "lib": [
+    //   "es6",
+    //   "dom"
+    // ],
+    // "outFile": "dist/utils.js",
     "inlineSourceMap": true,
     "allowJs": false,
     "moduleResolution": "node",
@@ -34,8 +35,8 @@
     "jest",
     "src/setupTests.ts",
     "tests"
-  ],
-  "include": [
-    "src"
-  ]
+  ] //,
+  // "include": [
+  //   "src"
+  // ]
 }

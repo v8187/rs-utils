@@ -1,6 +1,6 @@
 {
   "name": "@v8187/utils",
-  "version": "0.0.1-draft.000",
+  "version": "0.0.1-draft.01",
   "description": "Utility methods / functions for JavaScript and Typescript projects",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
