@@ -1,6 +1,6 @@
 {
   "name": "@v8187/rs-utils",
-  "version": "0.0.1-draft.01",
+  "version": "0.0.1-draft.02",
   "description": "Utility methods / functions for JavaScript and Typescript projects",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -16,7 +16,7 @@
     "postversion": "git push && git push --tags",
     "pub": "npm publish --access public",
     "unpub": "npm unpublish --force",
-    "deprecate": "npm deprecate my-thing@\"< 0.2.3\" \"critical bug fixed in v0.2.3\""
+    "deprecate": "npm deprecate @v8187/utils@\"0.0.1-draft.0\" \"This module is deprecated and will be removed soon. Use @v8187/rs-utils instead\""
   },
   "repository": {
     "type": "git",
