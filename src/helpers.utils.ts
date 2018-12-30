@@ -13,7 +13,7 @@ export const setUID = (): string => {
         s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
     }
     s[14] = '4';  // bits 12-15 of the time_hi_and_version field to 0010
-    s[19] = hexDigits.substr((<any>s[19] & 0x3) | 0x8, 1);  // bits 6-7 of the clock_seq_hi_and_reserved to 01
+    s[19] = hexDigits.substr(((s[19] as any) & 0x3) | 0x8, 1);  // bits 6-7 of the clock_seq_hi_and_reserved to 01
     s[8] = s[13] = s[18] = s[23] = '-';
 
     return s.join('');
@@ -33,11 +33,11 @@ export const fireWindowResize = (): void => {
 
 export const selectContent = (eleId: string): void => {
     if ((document as any).selection) { // IE
-        let range = (document.body as any).createTextRange();
+        const range = (document.body as any).createTextRange();
         range.moveToElementText(document.getElementById(eleId));
         range.select();
     } else if (window.getSelection) {
-        let range = document.createRange() as any;
+        const range = document.createRange() as any;
         range.selectNode(document.getElementById(eleId));
         window.getSelection().removeAllRanges();
         window.getSelection().addRange(range);
@@ -70,7 +70,7 @@ export const deepCopy = (oldObj: any): any => {
     let newObj = oldObj;
     if (oldObj && typeof oldObj === 'object' && !(oldObj instanceof RegExp)) {
         newObj = Object.prototype.toString.call(oldObj) === '[object Array]' ? [] : {};
-        for (let i in oldObj) {
+        for (const i in oldObj) {
             if (oldObj[i] !== undefined) {
                 newObj[i] = deepCopy(oldObj[i]);
             }
@@ -101,7 +101,7 @@ export const mergeObject = (target, source) => {
         return;
     }
 
-    for (let key in source) {
+    for (const key in source) {
         if (source.hasOwnProperty(key)) {
             if (isObject(target[key]) && isObject(source[key])) {
                 target[key] = mergeObject(target[key], source[key]);

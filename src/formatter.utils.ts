@@ -21,12 +21,12 @@ export const padString = (value: string | number, position: PadPositions, padCha
         return value;
     }
 
-    const padString = new Array(remaininglen + 1).join(padChar);
+    const padStr = new Array(remaininglen + 1).join(padChar);
 
     if (position === 'LEFT') {
-        return padString + value;
+        return padStr + value;
     } else if (position === 'RIGHT') {
-        return value + padString;
+        return value + padStr;
     }
     return '';
 };

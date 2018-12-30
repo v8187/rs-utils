@@ -1,5 +1,5 @@
 {
-  "name": "@v8187/utils",
+  "name": "@v8187/rs-utils",
   "version": "0.0.1-draft.01",
   "description": "Utility methods / functions for JavaScript and Typescript projects",
   "main": "dist/index.js",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/v8187/sr-utils.git"
+    "url": "git+https://github.com/v8187/rs-utils.git"
   },
   "files": [
     "dist/**/*"
@@ -37,21 +37,21 @@
   "author": {
     "name": "Vikam Gupta",
     "email": "vikram1vicky@gmail.com",
-    "url": "https://github.com/v8187/sr-utils"
+    "url": "https://github.com/v8187/rs-utils"
   },
   "contributes": {
     "name": "Vikam Gupta",
     "email": "vikram1vicky@gmail.com",
-    "url": "https://github.com/v8187/sr-utils"
+    "url": "https://github.com/v8187/rs-utils"
   },
   "bundleDependencies": [],
   "private": false,
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/v8187/sr-utils/issues",
+    "url": "https://github.com/v8187/rs-utils/issues",
     "email": "vikram1vicky@gmail.com"
   },
-  "homepage": "https://github.com/v8187/sr-utils#readme",
+  "homepage": "https://github.com/v8187/rs-utils#readme",
   "devDependencies": {
     "@types/jest": "^23.3.10",
     "babel-jest": "^23.6.0",
