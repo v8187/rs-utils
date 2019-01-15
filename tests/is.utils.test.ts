@@ -1,6 +1,6 @@
 import { isObject, isEmptyObject } from '../src/is.utils';
 
-describe('[Utils][IS]', () => {
+describe('[IS]', () => {
     describe('isObject(value)', () => {
         test('Should return false for String value', () => {
             expect(isObject('abc')).toBeFalsy();

@@ -12,7 +12,7 @@ const sortedByScore = [{ name: 'Craig, Luke', score: 401 },
 { name: 'Kelley, Ty', score: 555 }, { name: 'Galloway, Ayan', score: 630 },
 { name: 'Mcgrath, Ian', score: 750 }, { name: 'Farrell, Beckett', score: 750 }];
 
-describe('[Utils][List]', () => {
+describe('[List]', () => {
     describe('sortByKey(list, key)', () => {
         test('Sorts list by "name" key', () => {
             expect(sortByKey([...mockList()], 'name')).toEqual(sortedByName);

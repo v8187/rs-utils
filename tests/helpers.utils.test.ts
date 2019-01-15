@@ -1,6 +1,6 @@
 import { deepCopy, swapNumbers, deepMergeObject, mergeObject } from '../src/helpers.utils';
 
-describe('[Utils][Helper]', () => {
+describe('[Helper]', () => {
     describe('deepCopy(value)', () => {
         test('Copy given Object/Array', () => {
             const mockObject = { a: 10, b: 15 };

@@ -5,7 +5,7 @@ const expectedText = 'Bachan Singh Bedi Pune Wala';
 
 const mockX = 'xxxxx';
 
-describe('[Utils][Formatter]', () => {
+describe('[Formatter]', () => {
 
     describe('toTitleCase(value)', () => {
 
