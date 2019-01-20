@@ -1,0 +1,56 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background: #ccc;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    font-size: 150%;
+    line-height: 50px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+aside {
+    height: calc(100% - 50px);
+    width: 200px;
+    float: left;
+    overflow: auto;
+}
+
+body>section {
+    margin-left: 200px;
+    padding: 0 20px;
+    height: calc(100% - 50px);
+    overflow: auto;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+}
+
+aside ul a {
+    display: block;
+    text-decoration: none;
+    color: #456488;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+aside ul a:hover,
+aside ul a:active {
+    text-decoration: underline;
+}
+
+body>section>section {}
