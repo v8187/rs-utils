@@ -35,4 +35,4 @@ toTitleCase('the tAj MAhAl'); // The Taj Mahal
 
 ## License
 
-[MIT](LICENSE.txt)
+[MIT](LICENSE)
