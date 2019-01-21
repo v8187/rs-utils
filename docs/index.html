@@ -51,8 +51,22 @@
     </aside>
     <section>
         <section>
-            <pre class="language-js"><code>const temp1 = fun();
-</code></pre>
+            <h2>deepCopy</h2>
+            <p>This method returns the deep copy of the given JavaScript Object or Array. Values of other Data Types
+                will be returned as it is without any modifications.</p>
+            <h4>Examples</h4>
+            <pre class="language-js"><code>// Example 1:
+const objA = {a: 'foo', b: {x: 10, y: 20, z: 30}};
+const objB  = deepCopy(objA);
+
+// Changing the value of nested property of objB does not make any change in objA.
+objB.b.x = 50;
+console.log(objA.b.x); // 10
+
+// Example 2:
+
+// Passing the null value, return the null value.
+deepCopy(null); // null</code></pre>
         </section>
     </section>
     <script type="text/javascript" src="static/prism.js"></script>
