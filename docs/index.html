@@ -70,7 +70,12 @@ deepCopy(null); // null</code></pre>
         </article>
         <article id="deepMergeObject">
             <h2>deepMergeObject</h2>
-            <p></p>
+            <p>This method accepts 2 or more JavaScript Objects as arguments.
+                It merged down all the Objects into one (first Object) and returns it. <br />
+                For example, if 4 objects are given, 4th will be merged into 3rd, then 3rd (merged one) will be
+                merged into 2nd object and then finally into first object and returned.
+                Internally it uses mergeObject method for merging.
+            </p>
             <h4>Examples</h4>
             <pre class="language-js"><code>// Sample code
             
